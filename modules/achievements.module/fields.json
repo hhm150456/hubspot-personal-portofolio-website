@@ -1,0 +1,87 @@
+[ {
+  "id" : "3dad0e66-819f-34d8-b31a-ff6a402afebd",
+  "name" : "main_heading",
+  "label" : "main_heading",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<em>My achievements</em>"
+}, {
+  "id" : "f944365c-caa8-3c02-8014-131818d1fd87",
+  "name" : "trophy_image",
+  "label" : "trophy_image",
+  "required" : true,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/387f9330c4332fceb8d28e868af1dbd6-removebg-preview.png",
+    "alt" : "387f9330c4332fceb8d28e868af1dbd6-removebg-preview",
+    "loading" : "lazy",
+    "width" : 508,
+    "height" : 491,
+    "max_width" : 508,
+    "max_height" : 491
+  }
+}, {
+  "id" : "781e710e-852f-bee7-e48d-f0bd438e3800",
+  "name" : "achievements",
+  "label" : "achievements",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "f2766f9e-5c92-c422-38bd-5887c13cb9d2",
+    "name" : "title",
+    "label" : "title",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<span style=\"font-size: 24px;\"><em>Achievement&nbsp;</em></span>"
+  }, {
+    "id" : "e8e58f25-07ae-3fa4-19f6-1d7e2f49bde9",
+    "name" : "description",
+    "label" : "description",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "title" : "<span style=\"font-size: 24px;\"><em>Achievement&nbsp;</em></span>",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+  }, {
+    "title" : "<span style=\"font-size: 24px;\"><em>Achievement&nbsp;</em></span>",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+  }, {
+    "title" : "<span style=\"font-size: 24px;\"><em>Achievement&nbsp;</em></span>",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+  } ]
+}, {
+  "id" : "b286f323-f9fd-2d28-9f33-eceb68ad74b5",
+  "name" : "bottom_text",
+  "label" : "bottom_text",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p style=\"font-size: 48px;\"><strong><em><span style=\"font-family: 'Book Antiqua', Palatino, Georgia, serif;\">Add a quote that inspires you</span></em></strong></p>"
+} ]

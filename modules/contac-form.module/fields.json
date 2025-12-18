@@ -1,0 +1,75 @@
+[ {
+  "id" : "42f4028b-85f8-d19d-8408-172b4e29dc4b",
+  "name" : "note_text",
+  "label" : "note_text",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "I'm currently available for freelance work and new opportunities. Whether you have a question or just want to say hi, feel free to reach out!"
+}, {
+  "id" : "27a22a88-19eb-2461-f8f1-a57f415a7a8a",
+  "name" : "response_time",
+  "label" : "response_time",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Usually within 24 hours"
+}, {
+  "id" : "7c2565d4-dc4a-0ab5-5006-a7073ad7ea4e",
+  "name" : "form_guid",
+  "label" : "form_guid",
+  "required" : true,
+  "locked" : false,
+  "embed_versions" : [ "v2", "v4" ],
+  "type" : "form",
+  "display_width" : null,
+  "default" : {
+    "form_id" : "02b0881d-fd66-445b-b23a-ba75d186e1dd",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "8dd91d09-4521-fd3c-9a65-4465654cfcf9",
+  "name" : "heading",
+  "label" : "heading",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<em>Have a project in mind or want to collaborate? I'd love to hear from you!</em>"
+}, {
+  "id" : "d941c738-0b4b-6056-e9fd-512af12f0afc",
+  "name" : "email",
+  "label" : "email",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "hagarbusihisham2022@gmail.com"
+}, {
+  "id" : "bde46cf1-8192-7253-c219-b21bee29dbe3",
+  "name" : "location",
+  "label" : "location",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Egypt"
+}, {
+  "id" : "367da402-c977-fe09-5613-e447266c5d7d",
+  "name" : "phone",
+  "label" : "phone",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "01554773353"
+} ]

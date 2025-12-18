@@ -1,0 +1,244 @@
+<!--
+
+ templateType: section
+
+ label: Banner
+
+ description: "A banner typically used at the top of a page highlighting a product or main topic."
+
+ isAvailableForNewContent: true
+
+ screenshotPath: ../images/section-previews/banner.png
+
+-->
+
+{% require_css %}
+
+<style>
+
+    .about-me-wrapper {
+
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+        text-align: center;
+
+        margin: 30px auto;
+
+        background-color: #eee;
+
+    }
+
+    .about-me-wrapper .container {
+
+        width: 90%;
+
+        margin: auto;
+
+        text-align: center;
+
+        padding: 25px 5px;
+
+    }
+
+    .about-me-wrapper .container .about-header {
+
+        text-align: center;
+
+        margin-bottom: 60px;
+
+    }
+
+    .about-me-wrapper .container .about-header h1 {
+
+        font-size: 2.5rem;
+
+        color: #1a1a1a;
+
+        margin-bottom: 24px;
+
+        font-weight: 600;
+
+        margin-top: 0;
+
+    }
+
+    .about-me-wrapper .about-header p {
+
+        font-size: 1.125rem;
+
+        color: #666;
+
+        line-height: 1.8;
+
+/*         max-width: 800px; */
+
+    }
+
+    .about-me-wrapper .features-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        gap: 30px;
+
+        margin-top: 40px;
+
+    }
+
+    .about-me-wrapper .feature-card {
+
+        background: white;
+
+        border-radius: 12px;
+
+        padding: 40px 30px;
+
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+
+    .about-me-wrapper .feature-card:hover {
+
+        transform: translateY(-5px);
+
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    }
+
+    .about-me-wrapper .feature-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+        margin: 0 auto 24px;
+
+    }
+
+    .about-me-wrapper .feature-icon svg {
+
+        width: 100%;
+
+        height: 100%;
+
+        fill: #2563eb;
+
+    }
+
+    .about-me-wrapper .feature-card h3 {
+
+        font-size: 1.5rem;
+
+        color: #1a1a1a;
+
+        margin-bottom: 16px;
+
+        font-weight: 600;
+
+    }
+
+    .about-me-wrapper .feature-card p {
+
+        font-size: 1rem;
+
+        color: #666;
+
+        line-height: 1.6;
+
+    }
+
+    @media (max-width: 768px) {
+
+        .about-me-wrapper .about-header h1 {
+
+            font-size: 2rem;
+
+        }
+
+        .about-me-wrapper .about-header p {
+
+            font-size: 1rem;
+
+        }
+
+        .about-me-wrapper .features-grid {
+
+            grid-template-columns: 1fr;
+
+        }
+
+    }
+
+</style>
+
+{% end_require_css %}
+
+
+
+{% dnd_section %}
+
+{% dnd_column %}
+
+{% dnd_row %}
+
+{% dnd_module path='@hubspot/rich_text' %}
+
+{% module_attribute 'html' %}
+
+<div class="about-me-wrapper">
+
+    <div class="container">
+
+        <div class="about-header">
+
+            <h1>About Me</h1>
+
+            <p>I'm a passionate designer and developer with over 5 years of experience creating digital products. I believe in the power of design to solve problems and create meaningful experiences.</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% end_module_attribute %}
+
+{% end_dnd_module %}
+
+{% end_dnd_row %}
+
+
+
+{% dnd_row %}
+
+
+
+{% dnd_column %}
+
+  {% dnd_row padding = 20 px 20 px %}
+
+{% dnd_module path="/Portofolio/modules/skill-card.module" %}
+      {% end_dnd_module %}
+
+{% end_dnd_row %}
+
+{% end_dnd_column %}
+
+
+
+
+
+
+
+{% end_dnd_row %}
+
+
+
+
+
+{% end_dnd_column %}
+
+{% end_dnd_section %}

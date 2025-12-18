@@ -1,0 +1,51 @@
+<div class="custom-card">
+  {% if module.card.project_image.src %}
+    <div class="hero-image">
+      <img src="{{ module.card.project_image.src }}" alt="{{ module.card.project_image.alt }}">
+    </div>
+  {% endif %}
+  
+  <div class="details_div">
+        {% if module.card.section_title %}
+        <div class="section-title">
+          {{ module.card.section_title }}
+        </div>
+      {% endif %}
+      {% if module.card.description_text %}
+      <p>
+        {{ module.card.description_text }}
+      </p>
+      {% endif %}
+
+ {% if module.card.url_field %}
+  <a href="{{ module.card.url_field.href }}"
+     {% if module.card.url_field.open_in_new_tab %}target="_blank"{% endif %}
+     {% if module.card.url_field.rel %}rel="{{ module.card.url_field.rel }}"{% endif %}
+     class="card-link">
+     
+    🔗GitHub Repo
+  </a>
+{% endif %}
+
+  </div>
+</div>
+
+{% require_css %}
+    <style>
+        {% scope_css %}
+
+      .custom-card{
+          background-color: {{ module.card.bg_color.color }};
+          border-radius: 8px;
+          border-radius: 0.5rem;
+          overflow: hidden;
+          width: 100%;
+        margin: 0 50px ;
+         }
+{% end_scope_css %}
+    </style>
+{% end_require_css %}
+        
+
+
+

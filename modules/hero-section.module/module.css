@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+   border-radius: 50%;
+}
+a{
+    text-decoration: none;
+}
+/* end */
+
+
+
+/* start hero section module css */
+.hero_section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 90%;
+    margin: 30px auto;
+/*     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   */
+}
+.hero-width{
+    width: 40%;
+}
+.personal-info{
+    padding: 0 30px
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.personal-info h1{
+    font-size: 3em;
+    color: #222;
+}
+.personal-info h2{
+    font-size: 1.5em;
+    color: #263238;
+}
+.btn-hero{
+    padding: 15px 20px;
+    background-color: #540863;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width:1120px){
+    .hero_section{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .hero-width{
+        width: 80%;
+    }
+    .personal-info{
+    padding:  30px 10px;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    }
+}
+

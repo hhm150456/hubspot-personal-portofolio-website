@@ -1,0 +1,175 @@
+<!--
+
+  templateType: page
+
+  isAvailableForNewContent: true
+
+  label: Home Page Template
+
+  screenshotPath: ../images/template-previews/home-template.png
+
+-->
+
+
+
+<!DOCTYPE html>
+
+<html lang="{{ html_lang }}" dir="{{ html_lang_dir }}">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ content.html_title }}</title>
+
+  <meta name="description" content="{{ content.meta_description }}">
+
+<!--   favicon -->
+
+  
+
+  <!-- Theme CSS -->
+
+  {{ require_css(get_asset_url("../css/main.css")) }}
+
+  
+
+</head>
+
+
+
+<body class="{{ body_class }}">
+
+  
+
+   {% global_partial path="/Portofolio/templates/partials/header.html" %}
+
+
+
+
+
+  <!-- Standard HubSpot Header -->
+
+  {{ standard_header_includes }}
+
+  
+
+  <!-- Main Content -->
+
+  <main id="main-content">
+
+    
+
+    <!-- 1. Hero Section -->
+
+    {% dnd_area "hero_section" %}
+
+      {% dnd_section %}
+
+        {% dnd_column %}
+
+          {% dnd_row %}
+
+            {% dnd_module path="/Portofolio/modules/hero-section.module" %}
+
+            {% end_dnd_module %}
+
+          {% end_dnd_row %}
+
+        {% end_dnd_column %}
+
+      {% end_dnd_section %}
+
+    {% end_dnd_area %}
+
+    
+
+    <!-- 2. About Me Section -->
+
+    {% dnd_area 'about-me' %}
+
+   {# Banner Section #}
+
+   {% include_dnd_partial path='/Portofolio/Sections/about-me.html' context={} %}
+
+   {# End Banner Section #}
+
+{% end_dnd_area %}
+
+    
+
+   {% dnd_area 'experience' %}
+
+   {# Banner Section #}
+
+   {% include_dnd_partial path='/Portofolio/Sections/experience-section.html' context={} %}
+
+   {# End Banner Section #}
+
+{% end_dnd_area %}
+
+    
+
+    <!-- 4. Projects Section -->
+
+    {% dnd_area 'projects' %}
+
+   {# Banner Section #}
+
+   {% include_dnd_partial path='/Portofolio/Sections/project-section.html' context={} %}
+
+   {# End Banner Section #}
+
+{% end_dnd_area %}
+
+    
+
+    <!-- 5. Achievements Section -->
+
+    {% dnd_area 'Achievements' %}
+
+   {# Banner Section #}
+
+   {% include_dnd_partial path='/Portofolio/Sections/achievements-section.html' context={} %}
+
+   {# End Banner Section #}
+
+{% end_dnd_area %}
+
+    
+
+    <!-- 6. Contact Me Section -->
+
+     {% dnd_area 'contact' %}
+
+   {# Banner Section #}
+
+   {% include_dnd_partial path='/Portofolio/Sections/contacts.html' context={} %}
+
+   {# End Banner Section #}
+
+{% end_dnd_area %}
+
+    
+
+  </main>
+
+  
+
+  <!-- Footer -->
+
+  {% global_partial path="/Portofolio/templates/partials/footer.html" %}
+
+  
+
+  <!-- Standard HubSpot Footer -->
+
+  {{ standard_footer_includes }}
+
+  
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!-- start hero section -->
+            <div class="hero_section">
+            <div class="personal-info hero-width">
+                <h1>{{ module.title }}</h1>
+<!--                 <h2>{{ module.subtitle }}</h2> -->
+                <p>{{ module.description }}</p>
+                <div class="hero-btn">
+                <a href="{{module.url_field.url.href}}" target="_blank"><button class="btn-hero">Show CV</button></a>
+                </div>
+            </div>
+            <div class="imge-profile hero-width">
+                <img src="{{ module.profile_image.src }}" width="100%" height="100%" alt="{{ module.profile_image.alt }}">
+            </div>
+        </div>
+
+
+
+
+
+
+{% require_css %}
+    <style>
+        {% scope_css %}
+         .personal-info h1{
+            color: {{module.text_color.color}};
+          }
+        .hero_section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            min-height: 80vh;
+            background: radial-gradient(circle at 75% 50%, #540863 0%, #0a0a0c 100%);
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .hero-width {
+            flex: 0 0 48%;
+        }
+
+        .personal-info h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+
+        .personal-info h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .personal-info h1 span {
+            color: #bd66ff; 
+        }
+
+        .personal-info p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #E3E3E3;
+            margin-bottom: 40px;
+            max-width: 90%;
+        }
+
+        .hero-btn .btn-hero {
+            background-color: #540863; 
+            color: white;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+            box-shadow: 0 4px 20px rgba(138, 79, 255, 0.4);
+        }
+
+        .hero-btn .btn-hero:hover {
+            background-color: #934790;
+            transform: translateY(-3px);
+        }
+
+        .imge-profile {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imge-profile img {
+            z-index: 2;
+            position: relative;
+            animation: floating 3s ease-in-out infinite; 
+        }
+
+        .imge-profile::after {
+            content: "";
+            position: absolute;
+            bottom: -20px; 
+            width: 60%;
+            height: 40px;
+            background: rgba(138, 79, 255, 0.4); 
+            filter: blur(35px); 
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @media (max-width: 768px) {
+            .hero_section {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 0;
+            }
+            .hero-width {
+                flex: 0 0 100%;
+                margin-bottom: 40px;
+            }
+            .personal-info h1 {
+                font-size: 2.5rem;
+            }
+        }
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}

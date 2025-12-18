@@ -1,0 +1,169 @@
+[ {
+  "id" : "9efef654-060d-3dbf-4710-908158cc7f35",
+  "name" : "cards",
+  "label" : "cards",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "8dccbe2b-abfb-c898-6ace-435395c3a563",
+    "name" : "project_image",
+    "label" : "project_image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/3653884-200-1.png",
+      "alt" : "3653884-200-1",
+      "loading" : "lazy",
+      "width" : 200,
+      "height" : 200,
+      "max_width" : 200,
+      "max_height" : 200
+    }
+  }, {
+    "id" : "d8a9fa7c-6811-70fd-312d-a973518a8021",
+    "name" : "section_title",
+    "label" : "section_title",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<span style=\"font-size: 20px;\">Project</span>"
+  }, {
+    "id" : "9667f5b1-4a9c-0873-566e-4c80cb33ac5c",
+    "name" : "description_text",
+    "label" : "description_text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "project description"
+  }, {
+    "id" : "15c8a286-4dbc-c7e1-c105-09a1a726d3de",
+    "name" : "url_field",
+    "label" : "url_field",
+    "required" : true,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "FILE", "CONTENT", "BLOG", "CALL_TO_ACTION", "PAYMENT", "EMAIL_ADDRESS", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.google.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "fd5301a4-4e33-f829-a1cc-27b6de1400bb",
+    "name" : "bg_color",
+    "label" : "bg_color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#D9D2E9",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "project_image" : {
+      "size_type" : "auto",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/3653884-200-1.png",
+      "alt" : "3653884-200-1",
+      "loading" : "lazy",
+      "width" : 200,
+      "height" : 200,
+      "max_width" : 200,
+      "max_height" : 200
+    },
+    "section_title" : "<span style=\"font-size: 20px;\">Project</span>",
+    "description_text" : "project description",
+    "url_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.google.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "bg_color" : {
+      "color" : "#D9D2E9",
+      "opacity" : 100
+    }
+  }, {
+    "project_image" : {
+      "size_type" : "auto",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/3653884-200-1.png",
+      "alt" : "3653884-200-1",
+      "loading" : "lazy",
+      "width" : 200,
+      "height" : 200,
+      "max_width" : 200,
+      "max_height" : 200
+    },
+    "section_title" : "<span style=\"font-size: 20px;\">Project</span>",
+    "description_text" : "project description",
+    "url_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.google.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "bg_color" : {
+      "color" : "#D9D2E9",
+      "opacity" : 100
+    }
+  }, {
+    "project_image" : {
+      "size_type" : "auto",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/3653884-200-1.png",
+      "alt" : "3653884-200-1",
+      "loading" : "lazy",
+      "width" : 200,
+      "height" : 200,
+      "max_width" : 200,
+      "max_height" : 200
+    },
+    "section_title" : "<span style=\"font-size: 20px;\">Project</span>",
+    "description_text" : "project description",
+    "url_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.google.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "bg_color" : {
+      "color" : "#D9D2E9",
+      "opacity" : 100
+    }
+  } ]
+} ]

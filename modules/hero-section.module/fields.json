@@ -1,0 +1,80 @@
+[ {
+  "id" : "1e88748c-136b-3f85-a737-56f5dfc142f9",
+  "name" : "title",
+  "label" : "title",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h1><em>Welcome to my portofolio</em></h1>"
+}, {
+  "id" : "313eea07-19ed-e5c4-6707-1289bdbc9d31",
+  "name" : "description",
+  "label" : "description",
+  "required" : true,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Discover a passionate and dedicated UI/UX developer, drivenby the vision of crafting impactful and user-centricexperiences."
+}, {
+  "id" : "3a056f58-d01b-2fa7-9a5c-8d0181858660",
+  "name" : "subtitle",
+  "label" : "subtitle",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "This is my headline"
+}, {
+  "id" : "26bc108c-dae5-d6fc-eb22-9c2b28a01081",
+  "name" : "text_color",
+  "label" : "text_color",
+  "required" : true,
+  "locked" : false,
+  "show_opacity" : true,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#FFFFFF",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7968bc0c-e72e-e015-1ba7-f022a3c12992",
+  "name" : "url_field",
+  "label" : "url_field",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "FILE", "CONTENT", "BLOG", "CALL_TO_ACTION", "PAYMENT", "EMAIL_ADDRESS", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "b84312ce-2614-e7ab-9591-0e9447fcd9a1",
+  "name" : "profile_image",
+  "label" : "profile_image",
+  "required" : true,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/OIP.1jpg.jpg",
+    "alt" : "OIP.1jpg",
+    "loading" : "lazy",
+    "width" : 222,
+    "height" : 202
+  }
+} ]

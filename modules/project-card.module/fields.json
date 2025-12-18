@@ -1,0 +1,124 @@
+[ {
+  "id" : "6efda9de-7f13-ba17-8079-70e5cfc49055",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : { }
+}, {
+  "id" : "993bf09e-4d47-f9b9-785e-75af1d02e081",
+  "name" : "card",
+  "label" : "card",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "83ab6da5-0b60-33de-3691-66950a6c1376",
+    "name" : "url_field",
+    "label" : "url_field",
+    "required" : true,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "FILE", "CONTENT", "BLOG", "CALL_TO_ACTION", "PAYMENT", "EMAIL_ADDRESS", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.google.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "2132f003-a264-8256-e8d5-53dbf553c977",
+    "name" : "project_image",
+    "label" : "project_image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/0_f-V4p9h5vWMVHucv.jpg",
+      "alt" : "0_f-V4p9h5vWMVHucv",
+      "loading" : "lazy",
+      "width" : 1400,
+      "height" : 935,
+      "max_width" : 1400,
+      "max_height" : 935
+    }
+  }, {
+    "id" : "de83b1a0-b304-5a8d-403a-dc0eefcfc106",
+    "name" : "bg_color",
+    "label" : "bg_color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#9FC5E8",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "be7813c2-2132-0860-2b03-2bc4c17f0826",
+    "name" : "section_title",
+    "label" : "section_title",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<span style=\"font-size: 24px;\"><em>This is my project</em></span>"
+  }, {
+    "id" : "dbe2db7e-6183-6a51-b412-2dfbb81c2894",
+    "name" : "description_text",
+    "label" : "description_text",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "url_field" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.google.com",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "project_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/0_f-V4p9h5vWMVHucv.jpg",
+      "alt" : "0_f-V4p9h5vWMVHucv",
+      "loading" : "lazy",
+      "width" : 1400,
+      "height" : 935,
+      "max_width" : 1400,
+      "max_height" : 935
+    },
+    "bg_color" : {
+      "color" : "#9FC5E8",
+      "opacity" : 100
+    },
+    "section_title" : "<span style=\"font-size: 24px;\"><em>This is my project</em></span>",
+    "description_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+  }
+} ]

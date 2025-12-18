@@ -1,0 +1,40 @@
+<!--
+    templateType: global_partial
+    isAvailableForNewContent: false
+-->
+<!-- Begin partial -->
+{% require_css %}
+    <link rel="stylesheet" href="{{ get_asset_url('/Portofolio/css/layout/_header.css') }}">
+{% end_require_css %}
+
+{% require_js %}
+  <script src="{{ get_asset_url('/Portofolio/js/nav.js') }}"></script>
+{% end_require_js %}
+
+
+  <!-- starttt -->
+  <div class="header_container">
+    <div class="header">
+      <div class="navbar">
+
+        <div class="logo">
+          <h1><a href="#home">Portfolio</a></h1>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+<!-- End partial -->

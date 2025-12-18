@@ -1,0 +1,70 @@
+<!--
+  templateType: section
+  label: Multi-row content
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/multi-row-content.png
+  description: "Section separated in two columns. Left column has text and right column has an image."
+-->
+
+{% require_css %}
+<style>
+  .experience-section {
+    padding-top: 100px !important;    
+    padding-bottom: 100px !important;
+    background-color: transparent;      
+    display: block !important;
+  }
+
+  .experience-section .row-fluid {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    color:#000;
+  }
+  .row-fluid .dnd-module{
+    padding:35px
+  
+  }
+</style>
+{% end_require_css %}
+
+
+{% dnd_section
+  vertical_alignment="MIDDLE",
+  class="experience-section",
+%}
+  {% dnd_module
+    path="@hubspot/rich_text",
+    html={{ context.content or "<h2>Provide more details here.</h2><p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>" }}
+    offset=0,
+    width=6
+  %}
+  {% end_dnd_module %}
+ {% set base_image = context.image or get_asset_url("../images/grayscale-mountain.png") %}
+{# Generate optimized versions #}
+{% set image_400 = resize_image_url(base_image, 400, 0, 80) %}
+{% set image_800 = resize_image_url(base_image, 800, 0, 80) %}
+{% set image_1200 = resize_image_url(base_image, 1200, 0, 80) %}
+{% dnd_module path="@hubspot/linked_image",
+    img={
+      "alt": context.image_alt or "Stock placeholder image with grayscale geometrical mountain landscape",
+      "loading": context.image_loading or "disabled",
+      "max_height": context.image_height or 451,
+      "max_width": context.image_width or 605,
+      "size_type": "auto_custom_max",
+      "src": context.image or get_asset_url("../images/download.png")
+    },
+    styles={
+      "padding": {
+        "top": context.image_padding_top or 40,
+        "bottom": context.image_padding_bottom or 40,
+        "left": context.image_padding_left or 15,
+        "right": context.image_padding_right or 10
+      }
+    },
+    offset=6,
+    width=6
+  %}
+{% end_dnd_module %}
+{% end_dnd_section %}

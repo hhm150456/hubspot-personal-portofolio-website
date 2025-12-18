@@ -1,0 +1,29 @@
+<div class="achievements-container">
+  <h1>{{ module.main_heading }}</h1>
+
+  <div class="achievements-content">
+    <div class="achievements-left">
+      <div class="blob"></div>
+      <img 
+        src="{{ module.trophy_image.src }}" 
+        alt="{{ module.trophy_image.alt }}"
+        class="trophy-img">
+    </div>
+
+    <div class="achievements-right">
+      {% for achievement in module.achievements %}
+        <div class="achievement-item">
+          <div class="achievement-number">{{ loop.index }}</div>
+          <div class="achievement-text">
+            <h3>{{ achievement.title }}</h3>
+            <p>{{ achievement.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="achievements-bottom">
+    {{ module.bottom_text }}
+  </div>
+</div>

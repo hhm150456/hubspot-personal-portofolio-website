@@ -1,0 +1,46 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Portfolio Base Template
+  screenshotPath: ../images/template-previews/base-template.png
+-->
+
+<!DOCTYPE html>
+<html lang="{{ html_lang }}" dir="{{ html_lang_dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ content.html_title }}</title>
+  <meta name="description" content="{{ content.meta_description }}">
+  
+  <!-- Favicon -->
+  {% if site_settings.favicon.src %}
+    <link rel="shortcut icon" href="{{ site_settings.favicon.src }}">
+  {% endif %}
+  
+  <!-- Theme CSS -->
+  {{ require_css(get_asset_url("/Portofolio/css/main.css")) }}
+  
+  <!-- Standard HubSpot Header -->
+  {{ standard_header_includes }}
+</head>
+
+<body class="{{ body_class }}">
+  
+  <!-- Header -->
+  {% global_partial path="/Portofolio/templates/partials/header.html" %}
+  
+  <!-- Main Content -->
+  <main id="main-content">
+    {% dnd_area "main_content" %}
+    {% end_dnd_area %}
+  </main>
+  
+  <!-- Footer -->
+  {% global_partial path="/Portofolio/templates/partials/footer.html" %}
+  
+  <!-- Standard HubSpot Footer -->
+  {{ standard_footer_includes }}
+  
+</body>
+</html>

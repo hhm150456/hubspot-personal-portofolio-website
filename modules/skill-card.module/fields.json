@@ -1,0 +1,123 @@
+[ {
+  "id" : "5589ae79-f0c3-9df8-7425-a64ae877da45",
+  "name" : "skills",
+  "label" : "skills",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "8723ee26-5e08-7392-79bc-1a4ab73481c1",
+    "name" : "skill_title",
+    "label" : "skill_title",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<span style=\"font-size: 24px;\"><em>This is my skill</em></span>"
+  }, {
+    "id" : "54dea2e7-f514-6114-a944-e7e2a8667e2f",
+    "name" : "skill_image",
+    "label" : "skill_image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/download-1.png",
+      "alt" : "download-1",
+      "loading" : "lazy",
+      "width" : 225,
+      "height" : 225,
+      "max_width" : 50,
+      "max_height" : 50
+    }
+  }, {
+    "id" : "5ab90510-f9e5-5dc0-20cd-9cbf1c9167de",
+    "name" : "skill_description",
+    "label" : "skill_description",
+    "required" : true,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "This is the skill description"
+  }, {
+    "id" : "e1a0a083-3e5f-ea1d-4e8d-d9eaa310c970",
+    "name" : "bg_color",
+    "label" : "bg_color",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#9FC5E8",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "skill_title" : "<span style=\"font-size: 24px;\"><em>This is my skill</em></span>",
+    "skill_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/download-1.png",
+      "alt" : "download-1",
+      "loading" : "lazy",
+      "width" : 225,
+      "height" : 225,
+      "max_width" : 50,
+      "max_height" : 50
+    },
+    "skill_description" : "This is the skill description",
+    "bg_color" : {
+      "color" : "#9FC5E8",
+      "opacity" : 100
+    }
+  }, {
+    "skill_title" : "<span style=\"font-size: 24px;\"><em>This is my skill</em></span>",
+    "skill_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/download-1.png",
+      "alt" : "download-1",
+      "loading" : "lazy",
+      "width" : 225,
+      "height" : 225,
+      "max_width" : 50,
+      "max_height" : 50
+    },
+    "skill_description" : "This is the skill description",
+    "bg_color" : {
+      "color" : "#9FC5E8",
+      "opacity" : 100
+    }
+  }, {
+    "skill_title" : "<span style=\"font-size: 24px;\"><em>This is my skill</em></span>",
+    "skill_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://147173319.fs1.hubspotusercontent-eu1.net/hubfs/147173319/download-1.png",
+      "alt" : "download-1",
+      "loading" : "lazy",
+      "width" : 225,
+      "height" : 225,
+      "max_width" : 50,
+      "max_height" : 50
+    },
+    "skill_description" : "This is the skill description",
+    "bg_color" : {
+      "color" : "#9FC5E8",
+      "opacity" : 100
+    }
+  } ]
+} ]
